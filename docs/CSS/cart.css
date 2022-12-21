@@ -63,23 +63,17 @@
     border-radius: 5px;
     box-shadow: 0 0 5px #6B71C4;
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
+    line-height: 95px;
+    padding-right: 20px;
 }
+
 
 .info {
     width: 100%;
-    height: 45px;
+    height: 60px;
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    padding: 0 20px 0 20px;
 }
 
-.item-num {
-    margin: 0 10px 0 750px;
-    color: #172774;
-}
 
 .payment-btn {
     width: 70px;
@@ -96,6 +90,11 @@
 .payment-btn:hover {
     background-color: #172774;
     color: #fff;
+}
+
+.item-num {
+  margin: 0 10px 0 0;
+  color: #172774;
 }
 
 .center, .right, .left {
@@ -122,16 +121,16 @@
     margin: 0 150px 0 150px;
   }
 
-  .pic,.title, .price, .quantity, .delete, .price-num, .quantity-num,.return,.item-num,.total-price,.payment-btn {
+  .pic,.title, .price, .quantity, .delete, .price-num, .quantity-num,.return,.item-num,.total-price,.payment-btn,.right-side {
     display: inline-block;
   }
   
   .pic {
     width:85px;
     height: 85px;
-    display: flex;
+    display: inline-block;
     justify-content: center;
-    margin: 0 45px 0 15px;
+    margin: 0 15px 0 15px;
   }
 
   img {
@@ -147,14 +146,12 @@
     color: #172774;
     text-overflow: ellipsis;
     overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
+    display: inline-block;
     margin-right: 30px;
   }
 
   .quantity {
-    margin: 0 30px 0 300px;
+    margin: 0 30px 0 0;
     width: 75px;
     text-align: center;
   }
@@ -182,7 +179,11 @@
 
 .total-price {
     color: #172774;
-    margin-right: 55px;
+    margin-right: 25px;
+}
+
+.right-side {
+  float: right;
 }
 
 
@@ -223,3 +224,4 @@ ul {
 a {
     text-decoration: none;
 }
+
